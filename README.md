@@ -10,6 +10,8 @@ Debuggers allow programmers to step through their code line-by-line, inspect var
 
 Debugging can be helpful in understanding how a program works, for exploring the behavior of unfamiliar code.
 
+
+
 **Available Commands:**
 
 
@@ -54,9 +56,11 @@ _Positive Value:_ if we are in the parent process, it returns the process ID of 
 
 
 
+
 **How to set a breakpoint?**
  
 **int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint.
+
 
 
 
@@ -74,6 +78,7 @@ To present the .debug_info section: objdump --dwarf=info binary_file
 To present the .debug_line section: objdump --dwarf=decodedline binary_file
 
 
+
 **How to execute the debugger program:**
 
 1.   gcc debugger.c -o debugger -ldwarf  
@@ -82,6 +87,7 @@ To present the .debug_line section: objdump --dwarf=decodedline binary_file
 
 -ldwarf and -g are flags that supply the necessary information.
 (To include DWARF debug information, the code needs to be compiled with the -g flag, which is not always the default setting).
+
 
 
 **References:**
