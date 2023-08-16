@@ -31,6 +31,7 @@ Debugging can be helpful in understanding how a program works, for exploring the
 **Exit/Quit:** Exit from the program.
 
 
+
 __How to develop a debugger in c language?__
 
 
@@ -52,9 +53,11 @@ _Positive Value:_ if we are in the parent process, it returns the process ID of 
 **Wait:** Suspend the parent process execution until the child process state changes.
 
 
+
 **How to set a breakpoint?**
  
 **int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint.
+
 
 
 **Where can I find appropriate information about debugging?**
@@ -70,6 +73,7 @@ If your PIE is enabled, you will receive offset addresses and not fixed addresse
 To present the .debug_info section: objdump --dwarf=info binary_file
 To present the .debug_line section: objdump --dwarf=decodedline binary_file
 
+
 **How to execute the debugger program:**
 
 1.   gcc debugger.c -o debugger -ldwarf  
@@ -78,6 +82,7 @@ To present the .debug_line section: objdump --dwarf=decodedline binary_file
 
 -ldwarf and -g are flags that supply the necessary information.
 (To include DWARF debug information, the code needs to be compiled with the -g flag, which is not always the default setting).
+
 
 **References:**
 
@@ -109,4 +114,4 @@ https://developer.ibm.com/articles/au-dwarf-debug-format/
 https://nxmnpg.lemoda.net/3/dwarf (DWARF function documentation)
 
 
-https://dwarfstd.org/doc/DWARF5.pdf (Helped with location expression) 
+https://dwarfstd.org/doc/DWARF5.pdf (Helped to me with location expression mainly) 
