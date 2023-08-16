@@ -59,7 +59,7 @@ _Positive Value:_ if we are in the parent process, it returns the process ID of 
 
 **How to set a breakpoint?**
  
-**int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint.  
+**int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint. <br><br>  
 
 
 
@@ -98,11 +98,5 @@ To present the .debug_line section: objdump --dwarf=decodedline binary_file
 - [Writing a minimal debugger](http://sigalrm.blogspot.com/2010/07/writing-minimal-debugger.html)  
 - [OSDev on DWARF](https://wiki.osdev.org/DWARF)  
 - [IBM on DWARF](https://developer.ibm.com/articles/au-dwarf-debug-format/)  
-- [DWARF function documentation](https://nxmnpg.lemoda.net/3/dwarf)  
+- [DWARF function documentation](https://nxmnpg.lemoda.net/3/dwarf) (DWARF function documentation))
 - [DWARF Specification](https://dwarfstd.org/doc/DWARF5.pdf) (Helped with location expression)
-
-
-https://nxmnpg.lemoda.net/3/dwarf (DWARF function documentation)
-
-
-https://dwarfstd.org/doc/DWARF5.pdf (Helped to me with location expression mainly) 
