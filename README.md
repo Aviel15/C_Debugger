@@ -70,13 +70,16 @@ _Positive Value:_ if we are in the parent process, it returns the process ID of 
 Debug information generally refers to additional data that describes the program's original source code, data structures, variable declarations, and other details that are useful for debugging.
 
 I used DWARF debugging information and with the libraries: 
+
 #include <libdwarf/dwarf.h>
+
 #include <libdwarf/libdwarf.h>.
 
 _Pay attention:_
-If your PIE is enabled, you will receive offset addresses and not fixed addresses, to get the fixed addresses you need to calculate -> offset address + base address of code segment = fixed address.
+If your PIE is enabled, you will receive offset addresses and not fixed addresses, to get the fixed addresses you need to calculate -> _offset address + base address of code segment = fixed address._
 
 **libdwarf:** This is a C library that is used to consume and produce DWARF debug information.
+
 To present the .debug_info section: **objdump --dwarf=info binary_file**
 
 To present the .debug_line section: **objdump --dwarf=decodedline binary_file** 
