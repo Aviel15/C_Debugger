@@ -62,11 +62,19 @@ To present the .debug_line section: objdump --dwarf=decodedline binary_file
 
 **References:**
 https://man7.org/linux/man-pages/man2/ptrace.2.html
+
 https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1/ (All parts)
+
 https://www.facebook.com/legacy/notes/1179415802105143/
+
 https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/ (All parts)
+
 http://sigalrm.blogspot.com/2010/07/writing-minimal-debugger.html
+
 https://wiki.osdev.org/DWARF
+
 https://developer.ibm.com/articles/au-dwarf-debug-format/
+
 https://nxmnpg.lemoda.net/3/dwarf (DWARF function documentation)
+
 https://dwarfstd.org/doc/DWARF5.pdf (Helped with location expression) 
