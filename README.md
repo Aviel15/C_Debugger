@@ -107,5 +107,5 @@ To present the .debug_line section: **objdump --dwarf=decodedline binary_file**
 - [Writing a minimal debugger](http://sigalrm.blogspot.com/2010/07/writing-minimal-debugger.html)  
 - [OSDev on DWARF](https://wiki.osdev.org/DWARF)  
 - [IBM on DWARF](https://developer.ibm.com/articles/au-dwarf-debug-format/)  
-- [DWARF function documentation](https://nxmnpg.lemoda.net/3/dwarf) (DWARF function documentation))
-- [DWARF Specification](https://dwarfstd.org/doc/DWARF5.pdf) (Helped with location expression)
+- [DWARF function documentation](https://nxmnpg.lemoda.net/3/dwarf) (DWARF function documentation)
+- [DWARF Specification](https://dwarfstd.org/doc/DWARF5.pdf) (Helped to me with location expression mainly)
