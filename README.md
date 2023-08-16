@@ -1,14 +1,15 @@
 # C_Debugger
 Debugger in C language.
 
-**It is a debugger for the Linux x86_64 system, that works while ASLR and PIE are enabled, the project was for educational purposes.** <br><br>
+**It is a debugger for the Linux x86_64 system, that works while ASLR and PIE are enabled, the project was for educational purposes.** 
+<br><br>
 
 **What is a debugger?**
 
 A debugger is a software tool that helps programmers find and fix errors or bugs in their code. 
 Debuggers allow programmers to step through their code line-by-line, inspect variables and memory contents, set breakpoints, and examine the program's state at specific points in its execution.
 
-Debugging can be helpful in understanding how a program works, for exploring the behavior of unfamiliar code. <br><br>
+Debugging can be helpful in understanding how a program works, for exploring the behavior of unfamiliar code.<br><br>
 
 
 
@@ -30,7 +31,7 @@ Debugging can be helpful in understanding how a program works, for exploring the
 **Menu:** Show all the available commands and how to use them properly.
 
 
-**Exit/Quit:** Exit from the program. <br><br>
+**Exit/Quit:** Exit from the program.<br><br>
 
 
 
@@ -52,14 +53,14 @@ _Positive Value:_ if we are in the parent process, it returns the process ID of 
 
 **Exec:** The execl() is a system call that is responsible for loading and executing a new program in place of the currently running process.
  
-**Wait:** Suspend the parent process execution until the child process state changes. <br><br>
+**Wait:** Suspend the parent process execution until the child process state changes.<br><br>
 
 
 
 
 **How to set a breakpoint?**
  
-**int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint. <br><br>  
+**int 3 - 0xCC:** Software interrupt, INT 3 instruction generates a special one-byte opcode (0xCC) that is intended for calling the debug exception handler. replace the first byte of any instruction with a breakpoint.<br><br>  
 
 
 
@@ -86,7 +87,7 @@ To present the .debug_line section: objdump --dwarf=decodedline binary_file <br>
 3.   ./debugger <debugged_program>
 
 -ldwarf and -g are flags that supply the necessary information.
-(To include DWARF debug information, the code needs to be compiled with the -g flag, which is not always the default setting). <br><br>
+(To include DWARF debug information, the code needs to be compiled with the -g flag, which is not always the default setting).<br><br>
 
 
 
